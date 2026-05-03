@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</head>
+<body>
+    <h1>قائمة الوجبات</h1>
+    <table border="1">
+        <tr>
+            <th>الرمز</th>
+            <th>الوجبة</th>
+            <th>السعر</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+        </tr>
+        <!-- وجبة 1 -->
+        <tr>
+            <td>SF-001</td>
+            <td>وجبة سمك بوري مشوي لشخصين</td>
+            <td>110000</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: مصري | المكونات: سمك بوري، ثوم، زيت زيتون، طماطم، ليمون</td>
+        </tr>
+        <!-- وجبة 2 -->
+        <tr>
+            <td>CH-002</td>
+            <td>وجبة دجاج مشوي مع البطاطا</td>
+            <td>85000</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: سوري | المكونات: دجاج، بطاطا، بهارات مشكلة، زيت نباتي</td>
+        </tr>
+        <!-- وجبة 3 -->
+        <tr>
+            <td>BF-003</td>
+            <td>وجبة برغر لحم مع الجبن</td>
+            <td>60000</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: أمريكي | المكونات: لحم بقري، جبنة شيدر، خس، طماطم، صوص خاص</td>
+        </tr>
+        <!-- وجبة 4 -->
+        <tr>
+            <td>PZ-004</td>
+            <td>بيتزا مارجريتا حجم وسط</td>
+            <td>70000</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: إيطالي | المكونات: عجينة بيتزا، جبنة موزاريلا، صلصة طماطم، ريحان</td>
+        </tr>
+        <!-- وجبة 5 -->
+        <tr>
+            <td>DS-005</td>
+            <td>حلوى تشيز كيك بالتوت</td>
+            <td>45000</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: فرنسي | المكونات: جبنة كريمية، بسكويت، توت أحمر، سكر</td>
+        </tr>
+    </table>
+
+    <button id="continueBtn">متابعة</button>
+
+    <div id="orderForm" style="display:none;">
+        <h2>نموذج الطلب</h2>
+        <form id="foodForm">
+            الاسم الكامل: <input type="text" id="fullname"><br>
+            رقم الحساب المصرفي: <input type="text" id="account"><br>
+            تاريخ الطلب: <input type="text" id="date"><br>
+            رقم الموبايل: <input type="text" id="mobile"><br>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>من نحن</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>من نحن</h1>
+    <p>نحن مطعم متخصص بتقديم أشهى الوجبات السريعة والمأكولات البحرية.</p>
+
+    <h2>معلومات التواصل</h2>
+    <p>العنوان: حماة - سوريا</p>
+    <p>الهاتف: 0999999999</p>
+    <p>البريد الإلكتروني: info@restaurant.com</p>
+
+    <nav>
+        <a href="home.html">الرئيسية</a> |
+        <a href="Meals.html">الوجبات</a>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</head>
+<body>
+    <h1>قائمة الوجبات</h1>
+    <table border="1">
+        <tr>
+            <th>الرمز</th>
+            <th>الوجبة</th>
+            <th>السعر</th>
+            <th>إظهار التفاصيل</th>
+            <th>اختيار</th>
+        </tr>
+        <tr>
+            <td>SF-001</td>
+            <td>وجبة سمك بوري مشوي لشخصين</td>
+            <td>110000 ل.س</td>
+            <td><input type="checkbox" class="details"></td>
+            <td><input type="checkbox" class="select"></td>
+        </tr>
+        <tr class="extra" style="display:none;">
+            <td colspan="5">المطبخ: مصري | المكونات: سمك بوري، ثوم، زيت زيتون، طماطم، ليمون</td>
+        </tr>
+        <!-- أضف 4 وجبات أخرى بنفس الشكل -->
+    </table>
+
+    <button id="continueBtn">متابعة</button>
+
+    <div id="orderForm" style="display:none;">
+        <h2>نموذج الطلب</h2>
+        <form id="foodForm">
+            الاسم الكامل: <input type="text" id="fullname"><br>
+            رقم الحساب المصرفي: <input type="text" id="account"><br>
+            تاريخ الطلب: <input type="text" id="date"><br>
+            رقم الموبايل: <input type="text" id="mobile"><br>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+h1, h2 {
+    color: #444;
+}
+$(document).ready(function(){
+    // إظهار/إخفاء التفاصيل
+    $(".details").click(function(){
+        $(this).closest("tr").next(".extra").toggle();
+    });
+
+    // إظهار النموذج عند الضغط على متابعة
+    $("#continueBtn").click(function(){
+        $("#orderForm").show();
+    });
+
+    // التحقق من صحة المدخلات
+    $("#foodForm").submit(function(e){
+        e.preventDefault();
+        let fullname = $("#fullname").val();
+        let account = $("#account").val();
+        let date = $("#date").val();
+        let mobile = $("#mobile").val();
+
+        // تحقق من الاسم (إنكليزي فقط)
+        let nameRegex = /^[A-Za-z]+\s[A-Za-z]+$/;
+        if(fullname && !nameRegex.test(fullname)){
+            alert("الاسم يجب أن يكون إنكليزي مع فراغ واحد بين الاسم والكنية");
+            return;
+        }
+
+        // تحقق من الحساب (6 خانات)
+        let accountRegex = /^\d{6}$/;
+        if(!accountRegex.test(account)){
+            alert("رقم الحساب يجب أن يكون 6 خانات");
+            return;
+        }
+
+        // تحقق من التاريخ
+        let dateRegex = /^\d{2}-\d{2}-\d{4}$/;
+        if(date && !dateRegex.test(date)){
+            alert("التاريخ يجب أن يكون بالشكل dd-mm-yyyy");
+            return;
+        }
+
+        // تحقق من الموبايل (Syriatel أو MTN)
+        let mobileRegex = /^(09[3-6]\d{6}|09[8-9]\d{6})$/;
+        if(mobile && !mobileRegex.test(mobile)){
+            alert("رقم الموبايل غير صحيح");
+            return;
+        }
+
+        // حساب المجموع + الضريبة
+        let total = 0;
+        $(".select:checked").each(function(){
+            let price = parseInt($(this).closest("tr").find("td:eq(2)").text());
+            total += price;
+        });
+        let tax = total * 0.1;
+        let net = total - tax;
+
+        alert("الوجبات المختارة: " + $(".select:checked").length +
+              "\nالمجموع: " + total +
+              "\nالضريبة (10%): " + tax +
+              "\nالمبلغ الصافي: " + net);
+    });
+});
